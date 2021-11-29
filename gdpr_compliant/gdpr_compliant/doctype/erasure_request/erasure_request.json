@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "ERASE-REQUEST-.######",
+ "creation": "2021-09-08 21:47:26.508327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "message",
+  "status",
+  "response",
+  "request_for"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "request_for.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Full Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "request_for.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "request_for.message",
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Message"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status",
+   "options": "Pending\nComplete"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "Your data was successfully erased.",
+   "fieldname": "response",
+   "fieldtype": "Text Editor",
+   "in_preview": 1,
+   "label": "Response"
+  },
+  {
+   "fieldname": "request_for",
+   "fieldtype": "Link",
+   "label": "Request for",
+   "options": "User Rectification Request"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-08 21:59:20.092108",
+ "modified_by": "Administrator",
+ "module": "Gdpr Compliant",
+ "name": "Erasure Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
