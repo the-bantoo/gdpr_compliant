@@ -1,8 +1,17 @@
 {
  "cards_label": "",
  "category": "Modules",
- "charts": [],
- "charts_label": "",
+ "charts": [
+  {
+   "chart_name": "Rectification Requests",
+   "label": "Data Correction Request"
+  },
+  {
+   "chart_name": "Erasure Requests",
+   "label": "Data Deletion Request"
+  }
+ ],
+ "charts_label": "GDPR Compliance",
  "creation": "2021-09-08 09:47:44.539012",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -15,7 +24,7 @@
  "is_standard": 1,
  "label": "GDPR Compliance",
  "links": [],
- "modified": "2021-09-08 22:40:57.820792",
+ "modified": "2022-03-18 13:14:44.460112",
  "modified_by": "Administrator",
  "module": "Gdpr Compliant",
  "name": "GDPR Compliance",
@@ -24,19 +33,21 @@
  "pin_to_top": 1,
  "shortcuts": [
   {
+   "color": "#CB2929",
    "doc_view": "",
    "format": "{} Pending",
    "label": "Rectification",
    "link_to": "Rectification Request",
-   "stats_filter": "{\n    \"status\": \"Pending\"\n}",
+   "stats_filter": "",
    "type": "DocType"
   },
   {
+   "color": "#EC864B",
    "doc_view": "",
    "format": "{} Pending",
    "label": "Erasure",
    "link_to": "Erasure Request",
-   "stats_filter": "{\n    \"status\": \"Pending\"\n}",
+   "stats_filter": "{\n    \"workflow_state\": \"Pending\"\n}",
    "type": "DocType"
   }
  ],
