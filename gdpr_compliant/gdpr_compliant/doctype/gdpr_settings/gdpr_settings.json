@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-07 13:14:44.979070",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "auto_email",
+  "column_break_2",
+  "testing_mode",
+  "section_break_1",
+  "days_to_repeat",
+  "max_repeats",
+  "column_break_3",
+  "unresponsive_default",
+  "section_break_5",
+  "email_sender",
+  "email_subject",
+  "template"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_email",
+   "fieldtype": "Check",
+   "label": "Automatically email renewal notifications",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "7",
+   "fieldname": "days_to_repeat",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Repeat email notification after (days)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Email Settings"
+  },
+  {
+   "description": "You can use Request Doctype fields like this {field_name} as variables. Include {email_actions} to allow the recipient to choose an action.",
+   "fieldname": "template",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Email Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unresponsive_default",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Default action if no response is received",
+   "options": "Erase\nExtend",
+   "reqd": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "max_repeats",
+   "fieldtype": "Int",
+   "label": "Maximum emails before default action",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_sender",
+   "fieldtype": "Data",
+   "label": "Email Sender",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_subject",
+   "fieldtype": "Small Text",
+   "label": "Email Subject",
+   "length": 300,
+   "max_height": "33px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "testing_mode",
+   "fieldtype": "Check",
+   "label": "Testing Mode"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-12-08 08:06:18.645055",
+ "modified_by": "Administrator",
+ "module": "Gdpr Compliant",
+ "name": "GDPR Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

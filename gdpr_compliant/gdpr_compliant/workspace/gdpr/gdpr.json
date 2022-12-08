@@ -1,0 +1,138 @@
+{
+ "charts": [
+  {
+   "chart_name": "Rectification Requests",
+   "label": "Data Correction Requests"
+  },
+  {
+   "chart_name": "Erasure Requests",
+   "label": "Data Deletion Request"
+  }
+ ],
+ "content": "[{\"type\":\"chart\",\"data\":{\"chart_name\":\"Data Deletion Request\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Data Correction Requests\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Erasure\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rectification\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Data Modification</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Erasure\",\"col\":6}},{\"type\":\"card\",\"data\":{\"card_name\":\"Rectification\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2022-03-15 12:30:56.567693",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "permission",
+ "idx": 0,
+ "label": "GDPR",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rectification",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Third-party Rectification Request",
+   "link_count": 0,
+   "link_to": "Rectification Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Rectification Request",
+   "link_count": 0,
+   "link_to": "User Rectification Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Erasure",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Third-party Erasure Request",
+   "link_count": 0,
+   "link_to": "Erasure Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Erasure Request",
+   "link_count": 0,
+   "link_to": "User Erasure Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GDPR Term Compliance",
+   "link_count": 0,
+   "link_to": "Term Compliance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GDPR Settings",
+   "link_count": 0,
+   "link_to": "GDPR Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-12-08 12:44:50.793799",
+ "modified_by": "Administrator",
+ "module": "Gdpr Compliant",
+ "name": "GDPR",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "#CB2929",
+   "doc_view": "",
+   "format": "{} Pending",
+   "label": "Rectification",
+   "link_to": "Rectification Request",
+   "stats_filter": "{\n    \"workflow_state\": \"Pending\"\n}",
+   "type": "DocType"
+  },
+  {
+   "color": "#EC864B",
+   "doc_view": "",
+   "format": "{} Pending",
+   "label": "Erasure",
+   "link_to": "Erasure Request",
+   "stats_filter": "{\n    \"workflow_state\": \"Pending\"\n}",
+   "type": "DocType"
+  }
+ ],
+ "title": "GDPR"
+}

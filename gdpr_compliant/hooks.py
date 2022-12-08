@@ -118,6 +118,13 @@ app_license = "MIT"
 # 	]
 # }
 
+scheduler_events = {
+	"hourly": [
+			"gdpr_compliant.app.process_requests",
+			"gdpr_compliant.app.process_terms",
+		]
+}
+
 # Testing
 # -------
 
